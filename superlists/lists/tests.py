@@ -87,4 +87,3 @@ class NewListTest(TestCase):
             )
         new_list = List.objects.first()
         self.assertRedirects(response, '/lists/%d/' % (new_list.id,))
-        
